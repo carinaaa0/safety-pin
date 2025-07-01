@@ -8,18 +8,18 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  border-radius: 10px;
+  width: 0.52vw; /* 10px */
+  border-radius: 0.52vw;
 }
 
 ::-webkit-scrollbar-track {
   background: red;
-  border-radius: 10px;
+  border-radius: 0.52vw;
 }
 
 ::-webkit-scrollbar-thumb {
   background: black;
-  border-radius: 10px;
+  border-radius: 0.52vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -29,49 +29,28 @@
 body {
   overflow: hidden;
   text-align: center;
-  font-size: 15px;
-  line-height: 10px;
-  line-height: 80px;
+  font-size: 0.78vw;      /* 15px */
+  line-height: 4.17vw;    /* 80px */
   background: red;
   color: black;
   font-family: "CustomFont", sans-serif;
 }
 
-
-
-
 h1 {
-  font-size: 300px;
+  font-size: 15.63vw;        /* 300px */
   position: relative;
-  top: 0;
-  letter-spacing: -100px;
+  top: 2.08vw;               /* 40px */
+  letter-spacing: -5.21vw;  /* -100px */
   white-space: nowrap;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 40px;
-/*   -webkit-text-stroke: 2px yellow; */
 }
-
-/* h1 {
-  font-size: 200px;
-  position: relative;
-  top: 0; */
-/*   letter-spacing: -100px; */
-/*   white-space: nowrap;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 40px;
-  -webkit-text-stroke: 7px black;
-  font-family: sans-serif;
-  color: yellow;
-} */
 
 h2 {
   font-family: sans-serif;
-  margin-top: 470px;
-  letter-spacing: 3px;
+  margin-top: 24.48vw;       /* 470px */
+  letter-spacing: 0.16vw;    /* 3px */
   white-space: nowrap;
   align-items: center;
   justify-content: center;
@@ -79,9 +58,9 @@ h2 {
 }
 
 #Pin_closed {
-  width: 200px;
+  width: 10.42vw;            /* 200px */
   height: auto;
-  top: -435px;
+  top: -22.66vw;             /* -435px */
   position: relative;
 }
 
