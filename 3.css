@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url(https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/FA_FLPVZZYJYZ.ttf?v=1739557936898);
+}
+
+* {
+  cursor: default !important;
+}
+
+body {
+  overflow: hidden;
+  text-align: center;
+  line-height: 10px;
+  line-height: 80px;
+  background: red;
+  color: black;
+  font-family: "CustomFont", sans-serif;
+}
+
+h1 {
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  white-space: nowrap;
+  text-align: left;
+  position: fixed; 
+  bottom: 100px; 
+  left: 20px;
+  font-size: 300px;
+  margin: 1px;
+  -webkit-text-stroke: 8px black;
+  color: yellow;
+}
+
+.on {
+  font-size: 400px;
+  margin: 1px;
+  position: relative;
+  top: -190px;
+  -webkit-text-stroke: 8px black;
+  color: yellow;
+}
+
+h1 br {
+  line-height: 50%; 
+}
+
+@keyframes moveImage {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(530px, 540px) rotate(45deg);
+  }
+}
+
+#Pin_closed {
+  width: 300px;
+  height: auto;
+  position: relative;
+  animation: moveImage 1s ease-in-out forwards;
+}
+
+.select {
+  display: inline-block; 
+  width: 300px; 
+  height: auto;
+}

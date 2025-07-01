@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url(https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/FA_FLPVZZYJYZ.ttf?v=1739557936898);
+}
+
+* {
+  cursor: default !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: red;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  text-align: center;
+  font-size: 15px;
+  line-height: 10px;
+  line-height: 80px;
+  background: red;
+  color: black;
+  font-family: sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.of {
+  font-family: sans-serif;
+  text-align: left;
+  font-size: 280px;
+  margin-top: 90px;
+  z-index: 9999999999999;
+  color: black;
+  transition: text-shadow 0.5s ease-in-out;
+  cursor: pointer; 
+}
+
+.of:hover {
+  text-shadow: 0 0 30px #FFFF00, 0 0 40px #FFFF00, 0 0 50px #FFFF00,
+    0 0 60px #FFFF00;
+}
+
+.fish {
+  width: 73%;
+  height: auto;
+  position: relative;
+  top: -3%;
+  left: 38%; 
+  transform: translateX(-50%);
+  z-index: 9999999;
+}
+
+.fish-text {
+  position: absolute;
+  right: 1%;
+  font-size: 250px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: yellow;
+  -webkit-text-stroke: 6px black;
+  opacity: 0; 
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+  transform: translateY(20px); 
+}
+
+.fish1 {
+  top: -12%;
+}
+
+.fish2 {
+  top: 12%;
+}
+
+.fish3 {
+  top: 36%;
+}
+
+.fish4 {
+  top: 61%;
+  transition: text-shadow 0.5s ease-in-out;
+}
+
+.fish4:hover {
+  text-shadow: 0 0 20px #000000, 0 0 25px #000000, 0 0 30px #000000,
+    0 0 35px #000000;
+}

@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url(https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/FA_FLPVZZYJYZ.ttf?v=1739557936898);
+}
+
+* {
+  cursor: default !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: red;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+body {
+  overflow: hidden;
+  text-align: center;
+  font-size: 15px;
+  background: red;
+  color: black;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 150px;
+  margin-top: 22%;
+  z-index: 9999999999999;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+}
+
+h1:hover {
+  text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow,
+    0 0 20px yellow;
+  transition: text-shadow 0.5s ease-in-out;
+}
+
+h2 {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+}
+
+#background-gif {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/Asset_46%40600x.gif?v=1740923266716");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  filter: contrast(150%) saturate(150%);
+}
+
+#background-gif.hidden {
+  opacity: 0;
+}
+
+#background-gif:not(.hidden) {
+  opacity: 1;
+}
+
+.The {
+  position: absolute;
+  font-size: 220px;
+  left: 30px;
+  top: 32%;
+  z-index: 999999999;
+  opacity: 0; 
+  transition: opacity 1s ease-in-out, top 1s ease-in-out, left 1s ease-in-out;
+  -webkit-text-stroke: 3px black;
+}
+
+.SharpPoint {
+  position: absolute;
+  font-size: 150px;
+  left: 40px;
+  top: 63%;
+  z-index: 999999999;
+  transition: opacity 1s ease-in-out, left 1s ease-in-out, top 1s ease-in-out;
+  text-decoration: underline;
+}
+
+.With {
+  position: absolute;
+  font-size: 100px;
+  right: 40px;
+  top: -5%;
+  -webkit-text-stroke: 3px black;
+  color: yellow;
+  opacity: 0; 
+  visibility: hidden; 
+  transition: opacity 2s ease-in-out, visibility 0s 0.5s,
+    text-shadow 0.5s ease-in-out;
+}
+
+.With:hover {
+  text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #000000,
+    0 0 20px #000000;
+}

@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url(https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/FA_FLPVZZYJYZ.ttf?v=1739557936898);
+}
+
+* {
+  cursor: default !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: red;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+body {
+  overflow: hidden;
+  text-align: center;
+  background: red;
+  color: black;
+  font-family: "CustomFont", sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.shrimp1 {
+  width: 15%;
+  height: auto;
+  position: absolute;
+  left: 14%;
+  top: -50%;
+  animation: dropIn 0.8s ease-out forwards;
+}
+
+@keyframes dropIn {
+  from {
+    top: -50%;
+    opacity: 0;
+  }
+  to {
+    top: -19%;
+    opacity: 1;
+  }
+}
+
+.shrimp2 {
+  width: 17%;
+  height: auto;
+  position: absolute;
+  left: 39%;
+  top: -50%;
+  opacity: 0;
+  animation: dropInShrimp2 0.8s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes dropInShrimp2 {
+  from {
+    top: -50%;
+    opacity: 0;
+  }
+  to {
+    top: -4%;
+    opacity: 1;
+  }
+}
+
+.shrimp3 {
+  width: 16%;
+  height: auto;
+  position: absolute;
+  left: 68%;
+  top: -50%;
+  opacity: 0;
+  animation: dropInShrimp3 0.8s ease-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes dropInShrimp3 {
+  from {
+    top: -50%;
+    opacity: 0;
+  }
+  to {
+    top: 15%;
+    opacity: 1;
+  }
+}
+
+.shrimp4 {
+  width: 27%;
+  height: auto;
+  position: absolute;
+  left: 70%;
+  top: -50%;
+  opacity: 0;
+  animation: dropInShrimp4 0.8s ease-out forwards;
+  animation-delay: 3s;
+}
+
+@keyframes dropInShrimp4 {
+  from {
+    top: -50%;
+    opacity: 0;
+  }
+  to {
+    top: 68%;
+    opacity: 1;
+  }
+}
+
+.shrimp5 {
+  width: 56%;
+  height: auto;
+  position: absolute;
+  left: 19%;
+  top: -50%;
+  opacity: 0;
+  animation: dropInShrimp5 0.8s ease-out forwards;
+  animation-delay: 4s;
+}
+
+@keyframes dropInShrimp5 {
+  from {
+    top: -50%;
+    opacity: 0;
+  }
+  to {
+    top: 77%;
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-family: sans-serif;
+  text-align: left;
+  font-size: 120px;
+  margin-top: 100px;
+  z-index: 9999999999999;
+  top: 15%;
+  left: 3%;
+  position: absolute;
+  color: black;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 a {
+  color: yellow;
+  font-size: 140px;
+  text-decoration: none;
+  -webkit-text-stroke: 3px black;
+  transition: text-shadow 0.5s ease-in-out;
+}
+
+h1 a:hover {
+  text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #000000,
+    0 0 20px #000000;
+}

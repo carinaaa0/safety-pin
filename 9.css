@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url(https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/FA_FLPVZZYJYZ.ttf?v=1739557936898);
+}
+
+* {
+  cursor: default !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: red;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+body {
+  overflow: hidden;
+  text-align: center;
+  font-size: 15px;
+  background-color: red;
+  background-image: url("https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/Untitled_Artwork%202.gif?v=1740670228273");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: black;
+  font-family: "CustomFont", sans-serif;
+}
+
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 64px;
+  margin-top: 95px;
+  z-index: 9999999999999;
+  color: black;
+  text-decoration: none;
+  top: 39%;
+  left: 39%;
+  position: absolute;
+  transition: text-shadow 0.5s ease-in-out;
+}
+
+h1:hover {
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.6), 0 0 9px rgba(0, 0, 0, 0.5),
+    0 0 10px rgba(0, 0, 0, 0.4), 0 0 11px rgba(0, 0, 0, 0.3),
+    0 0 12px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Safety Pin</title>
+    <link rel="stylesheet" href="8.css" />
+        <link rel="icon" href="https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/Asset%2015.svg?v=1739709556814" type="image/x-icon" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <h1 class="and" onclick="showSharpText()">and looks at</h1>
+    
+    <h2 class="The" onclick="editText('The')">The</h2>
+    <h2 class="SharpPoint" onclick="editText('Sharp')">Sharp Point</h2>
+    <a href="9.html">
+    <h2 class="With" onclick="editText('With')">with a...</h2>
+    </a>
+
+    <div id="background-gif" class="hidden"></div>
+
+    <script>
+      function showSharpText() {
+  document.querySelector('h1').style.display = 'none';
+  
+  document.getElementById('background-gif').classList.remove('hidden');
+  
+  setTimeout(() => {
+    document.querySelectorAll('h2').forEach(h2 => {
+      h2.style.opacity = 1;
+      h2.style.visibility = "visible";  
+    });
+  }, 500); 
+
+  setTimeout(() => {
+    document.querySelector('.With').style.opacity = 1;
+    document.querySelector('.With').style.visibility = "visible"; 
+  }, 1000); 
+}
+    </script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Safety Pin</title>
+    <link rel="stylesheet" href="6.css" />
+        <link rel="icon" href="https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/Asset%2015.svg?v=1739709556814" type="image/x-icon" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        id="star1"
+        class="star"
+        src="https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/Untitled_Artwork.gif?v=1741615951419"
+        alt="Starburst"
+      />
+      <img
+        id="pin1"
+        class="pin"
+        src="https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/Asset%2015.svg?v=1739709556814"
+        alt="Unopened Pin"
+      />
+
+      <div id="clickHere" class="click-text">
+        <img
+          src="https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/Untitled_Artwork%201.gif?v=1740667096876"
+          alt="Click Here"
+        />
+      </div>
+
+      <div id="glowOval"></div>
+
+      <img
+        id="star2"
+        class="star"
+        src="https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/Untitled_Artwork.gif?v=1741615951419"
+        alt="Starburst"
+      />
+      <img
+        id="pin2"
+        class="pin"
+        src="https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/Asset%2018.svg?v=1740663550655"
+        alt="Opened Pin"
+      />
+
+      <div id="topText">Opened,<br />it snaps</div>
+
+      <div id="bottomText">
+        its <br />
+        tail out
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("pin1").addEventListener("click", function () {
+        document.getElementById("clickHere").style.display = "none";
+        document.getElementById("star2").style.opacity = "1";
+        document.getElementById("pin2").style.opacity = "1";
+        document.getElementById("topText").style.opacity = "1";
+        document.getElementById("bottomText").style.opacity = "1";
+        document.getElementById("glowOval").style.opacity = "1"; 
+      });
+
+      
+      document.getElementById("star2").addEventListener("click", function () {
+        window.location.href = "7.html"; 
+      });
+
+      document.getElementById("pin2").addEventListener("click", function () {
+        window.location.href = "7.html"; 
+      });
+    </script>
+  </body>
+</html>

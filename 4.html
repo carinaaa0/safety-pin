@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Safety Pin</title>
+    <link rel="stylesheet" href="/4.css" />
+        <link rel="icon" href="https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/Asset%2015.svg?v=1739709556814" type="image/x-icon" />
+
+  </head>
+  <body>
+    <h1>Quietly,</h1>
+
+    <img
+      src="https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/Asset%2057.svg?v=1740932164448"
+      id="Spark1"
+      alt="Spark1"
+    />
+
+    <img
+      src="https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/Asset%2058.svg?v=1740932175475"
+      id="Lines1"
+      alt="Lines1"
+    />
+
+    <h2>
+      <span>The</span>
+      <span>Silver</span>
+    </h2>
+
+    <img
+      src="https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/Asset%2057.svg?v=1740932164448"
+      id="Spark2"
+      alt="Spark2"
+    />
+
+    <img
+      src="https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/Asset%2059.svg?v=1740932183674"
+      id="Lines2"
+      alt="Lines2"
+    />
+
+    <a href="5.html">
+    <h3>image</h3>
+    </a>
+
+    <img
+      src="https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/Asset%2060.svg?v=1740932197817"
+      id="Spark3"
+      alt="Spark3"
+    />
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll("h1, h2, h3, img");
+
+    function checkScroll() {
+      elements.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.9) {
+          el.classList.add("show");
+        }
+      });
+    }
+
+    elements.forEach((el) => el.classList.add("hidden"));
+
+    checkScroll();
+    window.addEventListener("scroll", checkScroll);
+  });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Safety Pin</title>
+    <link rel="stylesheet" href="/5.css" />
+        <link rel="icon" href="https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/Asset%2015.svg?v=1739709556814" type="image/x-icon" />
+
+  </head>
+
+  <body>
+    <h1 class="of" onclick="showFishText()">Of some...</h1>
+
+    <img
+      src="https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/Asset%2037.svg?v=1740916515455"
+      class="fish"
+      alt="fish"
+    />
+
+    <h2 class="fish-text fish1">FISH</h2>
+    <h2 class="fish-text fish2">FISH</h2>
+    <h2 class="fish-text fish3">FISH</h2>
+    <a href="6.html">
+      <h2 class="fish-text fish4">FISH</h2>
+    </a>
+
+    <script>
+      function showFishText() {
+        const ofText = document.querySelector(".of");
+        ofText.textContent = "Of some"; 
+
+        const fishText = document.querySelectorAll(".fish-text");
+
+        fishText.forEach((text, index) => {
+          setTimeout(() => {
+            text.style.opacity = 1; 
+            text.style.transform = "translateY(0)"; 
+          }, index * 500); 
+        });
+      }
+    </script>
+  </body>
+</html>

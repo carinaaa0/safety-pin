@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url(https://cdn.glitch.global/8395e39c-1bc5-4c88-85e3-39fe53c6e815/FA_FLPVZZYJYZ.ttf?v=1739557936898);
+}
+
+* {
+  cursor: default !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: red;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+body {
+  overflow: hidden;
+  text-align: center;
+  font-size: 15px;
+  line-height: 10px;
+  line-height: 80px;
+  background: red;
+  color: black;
+  font-family: "CustomFont", sans-serif;
+}
+
+h1 {
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  white-space: nowrap;
+  text-align: center; 
+  position: relative;
+  top: 730px; 
+}
+
+.glow {
+  color: yellow;
+  transition: text-shadow 0.3s ease-in-out;
+  -webkit-text-stroke: 1.5px black;
+}
+
+.glow:hover {
+  text-shadow: 0 0 1px #000000, 0 0 4px #000000, 0 0 5px #000000,
+    0 0 6px #000000;
+}
+
+#Pin_closed {
+  width: 150px;
+  height: auto;
+  position: relative;
+  top: 318px; 
+  left: 3px;  
+  opacity: 1; 
+  transform: scale(1); 
+  transition: transform 1s ease, opacity 1s ease;
+  animation: scaleUp 1s forwards;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1) translateY(0); 
+    opacity: 1; 
+  }
+  100% {
+    transform: scale(2) translateY(-57px); 
+    opacity: 1; 
+  }
+}
+
+.select:hover {
+/*   transform: translateY(-30px);
+  transform: rotate(10deg);
+  transform-origin: 50% 50%;
+  position: relative; */
+}
